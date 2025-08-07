@@ -216,7 +216,7 @@ class MultiCameraSubscriber(Node):
 def main(args=None):
     parser = argparse.ArgumentParser(description="ROS 2 Multi-Camera Recorder")
     parser.add_argument(
-        '-l', '--length', type=int, default=20,
+        '-l', '--length', type=int, default=60,
         help="Maximum recording length in seconds (default: 20)")
     parser.add_argument(
         '-c', '--cameras', nargs='+', choices=['front', 'back'],
